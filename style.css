@@ -1,0 +1,101 @@
+/* 全体リセット */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", "Hiragino Kaku Gothic ProN", sans-serif;
+}
+
+/* 背景 */
+body {
+  min-height: 100vh;
+  background: #b6b9ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 白いカード */
+.app {
+  background: #ffffff;
+  width: 420px;
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* タイトル */
+.app h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* 入力エリア */
+.input-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* input 共通 */
+.input-box input {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* 日付＋スコアを横並び */
+.input-box input[type="date"],
+.input-box input[type="number"]:first-of-type {
+  width: 100%;
+}
+
+/* 記録ボタン */
+.input-box button {
+  margin-top: 8px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #5a63ff;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.input-box button:hover {
+  background: #434bff;
+}
+
+/* 記録表示エリア */
+#records {
+  margin-top: 20px;
+}
+
+/* 1件の記録 */
+.record {
+  background: #f4f4ff;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* 削除ボタン */
+.record .delete {
+  margin-top: 6px;
+  background: #ff5a5a;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.record .delete:hover {
+  background: #e04747;
+}
